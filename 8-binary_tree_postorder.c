@@ -10,9 +10,6 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (tree && func)
 	{
-		if (!tree)
-			return;
-
 		binary_tree_postorder(tree->left, print_num);
 		binary_tree_postorder(tree->right, print_num);
 		func(tree->n);
