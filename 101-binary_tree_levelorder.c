@@ -10,6 +10,7 @@
  * Description: This function traverses the binary tree in level-order
  * (also known as breadth-first search) and calls the provided function for
  * each visited node.
+ * #Advanced
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
